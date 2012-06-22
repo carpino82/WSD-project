@@ -168,6 +168,7 @@ border: 6px solid #F69D1E;
 	margin:25px 0px;
 }
 /*------------------------Gallery Styling------------------------*/
+
 #gallery {
 	border: 1px #296531;
 	list-style-type:none;
@@ -176,6 +177,7 @@ border: 6px solid #F69D1E;
 	padding:5px;
 
 }
+
 
 #gallery li{
 	float:left;
@@ -187,6 +189,10 @@ border: 6px solid #F69D1E;
 	border:3px solid #296531;
 	display:block;
 	outline:0;
+
+}
+#gallery img{
+	width:100px;
 }
 
 #gallery a:visited{
@@ -195,6 +201,7 @@ border: 6px solid #F69D1E;
 
 #gallery a:hover{
 	border-color:#F69D1E;
+	display:inline;
 }
 
 #gallery a:active{
@@ -311,6 +318,61 @@ nav a:hover{
 	color: #c98474;
 	background: #bfb4b2;
 }
+/*-------------------------benefitsTable---------*/
+#tableBenefits th{
+	font-size:1.125em/*18px*/;
+	color:#F69D1E;
+}
+#tableBenefits td {
+	color:#F69D1E;
+}
+
+#tableBenefits{
+	float:right;
+	margin-right:50px;
+}
+#tableBenefits{
+	border: 6px solid #F69D1E;
+}
+/*-------------------------contactform------*/
+#contact h2{
+	font-family: 'Luckiest Guy', cursive;
+	text-align:center;
+	background-color:#F69D1E;
+	width:36.900369%/*300px*/;
+	color:#296531;
+	font-size:1.1875em/*19px*/;
+	margin:0;
+	padding:0;
+}
+#contact {
+	background-color:#296531;
+	width:98.545455%/*813px*/;
+	padding:0;
+	border: 6px solid #F69D1E;
+	overflow:hidden;
+}
+
+#contact label{
+	display:block;
+	font-size:100%/*16px*/;
+	
+}
+
+
+#contact div{
+	font-size:100%/*16px*/;
+	color:#F69D1E;
+	text-align: left;
+
+}
+#contact .buttons{
+	width:30%;
+}
+#contact form{
+	margin-left:100px;
+}
+
 /*--------------------------Footer----------------------*/
 footer{
 	width:100%/*825px*/;
@@ -322,59 +384,119 @@ footer{
 
 /* Media Queries
  ==============================================*/
-/*tablet Portrait size to standard 960(devices and browsers)*/
- @media screen and (min-width: 768px) and (max-width:959px) {
- 	header h1 {
- 		color:red;
- 	}
- 	
- 	section p {
- 		margin-right: 10px;
- 	}
- 	
- 	#moreInfo p {
- 		padding: 0px 10px;
- 	}
- }
- 
-/*Mobile Landscape size to Tablet Portrait (devices and browsers)*/
- @media only screen and(min-width:480px) and (max-width:767px){
-#facts li strong {
-	font-family: 'Luckiest Guy', cursive;
-	font-size:.938em/*16px*/;
-	color:#F69D1E;
-	
+@media screen and (min-width:768px) and (max-width: 1036px) {
+header h1 {
+	color:red;
 }
-#moreInfo p {
-	-moz-column-count: 2;
-	-webkit-column-count:2;
-	margin:25px 1.8450185/*15px*/;
+body{
+	background-image: none;
+}
+
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+header h1{
+	color:blue;
+}
+
+}
+
+/*-----------------------------------------------------------------------------------------*/
+@media screen and (max-width: 479px) {
+
+header h1{
+	color:black;
+}
+/*-------gallery ----------------------------*/
+#gallery {
+	border: 0px #296531;
+	list-style-type:none;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+}
+#gallery li{
+	float:left;
+	margin:0 auto;
+}
+/*-----Quotes----------------------------------*/
+#quotes ol {
+	font-family: 'Luckiest Guy', cursive;
 	font-size:.875em/*14px*/;
 	color:#F69D1E;
-	
+	margin-top:25px;
 }
- 
-/*Mobile Portrait size to Mobile Landscape(devices and browsers)*/
- @media only screen and(max-width:479px){
 
-#facts li strong {
-	font-family: 'Luckiest Guy', cursive;
-	font-size:.938em/*14px*/;
-	color:#F69D1E;
-	
-}
+/*---------Bio----------------------------------*/
 #moreInfo p {
-	-moz-column-count: 2;
-	-webkit-column-count:2;
-	margin:25px 1.8450185/*15px*/;
+	-moz-column-count: 1;
+	-webkit-column-count:1;
+	margin:0px 1.8450185%/*12px*/;
 	font-size:.750em/*12px*/;
 	color:#F69D1E;
-	
+	clear:both;	
 }
-#facts img {
-	display:none;
+#moreInfo h2{
+display:none;
 }
-section img{
-	display:none;
+
+/*--------MainCTA---------------------------*/
+section h2 {
+	font-family: 'Lemon', cursive;
+	color:#296531;
+	padding:0px;
+	margin:0px;
 }
+/*-----------------Top Header------------------------------------*/
+header h1 {
+	font-family: 'Luckiest Guy', cursive;
+	font-size:1.500em/*40px*/;
+	color:#296531;
+	padding-top:25px;
+	float:left;
+	text-align:center;
+	text-shadow: 2px 2px 2px #111;
+}
+/*-------------------------Nav Elements---------------------------*/
+nav ul {
+	width:100%/*825px*/;
+	margin:0 auto;
+	background: #296531;
+	list-style-type:none;
+	padding:0;
+	overflow: hidden;
+	clear:both;
+}
+nav li {
+	width:15.625%/*125px*/;
+	float:left;
+	clear:right;
+}
+
+nav a{
+	font-family: 'Luckiest Guy', cursive;
+	font-size:1.125em/*18px*/;
+	text-decoration:none;
+	display:block;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	color:#f69d1e;
+}
+
+
+}
+
+
+
+
+
 
